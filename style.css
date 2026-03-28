@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
@@ -11,8 +12,13 @@
   --text-font: "Iceland", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: black;
+  color: var(--secondary-color);
 }
 
 .navbar {
@@ -22,16 +28,13 @@ body {
   justify-content: space-between;
   border-bottom: 1px solid var(--border-color);
   padding: 24px 4vw;
+  align-items: center;
 
+  background: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(5px);
 }
 
-.navbarLogo {
-  display: flex;
-  align-items: center;
-}
-
-.navbarLogo a {
+.navbar-logo a {
   text-decoration: none;
   color: var(--secondary-color);
   transition: 0.5s;
@@ -40,17 +43,17 @@ body {
   transition: 0.5s;
 }
 
-.navbarLogo a:hover {
+.navbar-logo a:hover {
   color: var(--primary-color);
 }
 
-.navbarLink {
+.navbar-links ul {
   display: flex;
   gap: 2vw;
-  align-items: center;
+  list-style: none;
 }
 
-.navbarLink a {
+.navbar-links a {
   text-decoration: none;
   color: var(--secondary-color);
   transition: 0.5s;
@@ -58,19 +61,24 @@ body {
   font-size: 24px;
 }
 
-.navbarLink a:hover {
+.navbar-links a:hover {
   color: var(--primary-color);
 }
 
-.main {
-  min-height: 100vh;
+.home-section {
+  min-height: 80vh;
   display: flex;
   justify-content: center;
-  gap: 8vw;
-  align-items: center;
 }
 
-.nameTitle a {
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10vw;
+}
+
+.home-title a {
   font-family: var(--title-font);
   text-decoration: none;
   color: var(--primary-color);
@@ -80,11 +88,11 @@ body {
   transition: 0.5s;
 }
 
-.nameTitle a:hover {
+.home-title a:hover {
   color: var(--secondary-color);
 }
 
-.content {
+.home-content {
   font-family: var(--text-font);
   display: flex;
   flex-direction: column;
@@ -92,22 +100,22 @@ body {
   color: var(--secondary-color);
 }
 
-.contentTitle h1 {
+.content-header h1 {
   font-size: 42px;
   font-weight: normal;
 }
 
-.contentText {
+.content-body {
   display: flex;
   flex-direction: column;
   gap: 2vh;
 }
 
-.contentText p {
+.content-body p {
   font-size: 24px;
 }
 
-.contentButton a {
+.content-action a {
   display: inline-block;
   text-decoration: none;
   color: var(--primary-color);
@@ -117,7 +125,7 @@ body {
   transition: 0.5s;
 }
 
-.contentButton a:hover {
+.content-action a:hover {
   color: var(--secondary-color);
   border: 1px var(--secondary-color) solid;
 }
