@@ -463,3 +463,108 @@ body {
   padding: 4px 10px;
   background: rgba(255, 255, 255, 0.05);
 }
+
+.skill-card {
+  position: relative;
+  overflow: visible;
+  width: 100%;
+}
+
+.skill-bg-word {
+  font-size: clamp(60px, 10vw, 120px);
+  right: 15px;
+  line-height: 1;
+  pointer-events: none;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+    gap: 50px;
+    padding: 60px 20px;
+  }
+
+  .home-content {
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .home-title a {
+    font-size: clamp(70px, 18vw, 130px);
+    line-height: 0.8;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    width: 100%;
+  }
+
+  .skill-card {
+    min-height: 320px;
+  }
+
+  .folders-row {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .folder {
+    width: 100%;
+  }
+
+  .navbar-links {
+    display: none;
+  }
+
+  .navbar {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 40px;
+  }
+
+  .section-rule {
+    width: 100%;
+  }
+
+  .skill-cat {
+    font-size: 28px;
+  }
+
+  .skill-chips {
+    gap: 6px;
+  }
+
+  .skill-chip {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+
+  .contact-tagline {
+    font-size: 38px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-link-row {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 0;
+  }
+
+  .contact-link-value {
+    font-size: 16px;
+    word-break: break-all;
+  }
+}
