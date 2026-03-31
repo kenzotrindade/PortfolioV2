@@ -38,7 +38,7 @@ body {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid var(--border-color);
-  padding: 24px 4vw;
+  padding: 1.5rem 4vw;
   align-items: center;
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(3px);
@@ -48,7 +48,7 @@ body {
 .navbar-logo a {
   text-decoration: none;
   color: var(--secondary-color);
-  font-size: 46px;
+  font-size: 3rem;
   transition: 0.5s;
 }
 
@@ -65,7 +65,7 @@ body {
 .navbar-links a {
   text-decoration: none;
   color: var(--secondary-color);
-  font-size: 24px;
+  font-size: 1.5rem;
   transition: 0.5s;
 }
 
@@ -91,7 +91,7 @@ body {
   text-decoration: none;
   color: var(--primary-color);
   text-transform: uppercase;
-  font-size: clamp(80px, 15vw, 150px);
+  font-size: clamp(5rem, 15vw, 9rem);
   font-weight: bold;
   transition: 0.5s;
   line-height: 0.85;
@@ -117,12 +117,12 @@ body {
 }
 
 .home-content h1 {
-  font-size: 42px;
+  font-size: 2.625rem;
   font-weight: normal;
 }
 
 .home-content p {
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 1.4;
 }
 
@@ -131,9 +131,9 @@ body {
   width: fit-content;
   text-decoration: none;
   color: var(--primary-color);
-  font-size: 32px;
+  font-size: 2rem;
   border: 1px var(--primary-color) solid;
-  padding: 12px 24px;
+  padding: 0.75rem 1.5rem;
   transition: 0.5s;
 }
 
@@ -145,24 +145,24 @@ body {
 .skills-section,
 .projects-section,
 .contact-section {
-  padding: 120px 5vw;
+  padding: 7.5rem 5vw;
 }
 
 .section-header {
   display: flex;
   align-items: center;
-  gap: 28px;
-  margin-bottom: 72px;
+  gap: 1.75rem;
+  margin-bottom: 4.5rem;
 }
 
 .section-header p {
-  font-size: 24px;
+  font-size: 1.5rem;
   color: var(--primary-color);
 }
 
 .section-header h2 {
   font-family: var(--title-font);
-  font-size: clamp(48px, 8vw, 72px);
+  font-size: clamp(3rem, 8vw, 4.5rem);
   text-transform: uppercase;
 }
 
@@ -183,13 +183,13 @@ body {
   background: rgba(13, 13, 13, 0.6);
   backdrop-filter: blur(3px);
   border: 1px solid #1a1a1a;
-  padding: 36px 32px;
-  min-height: 360px;
+  padding: 2.25rem 2rem;
+  min-height: 22.5rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   opacity: 0;
-  transform: translateY(28px);
+  transform: translateY(1.75rem);
   transition: 0.5s;
 }
 
@@ -218,7 +218,7 @@ body {
   top: 0;
   right: 10px;
   font-family: var(--title-font);
-  font-size: 120px;
+  font-size: 7.5rem;
   font-weight: 900;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.05);
@@ -227,9 +227,9 @@ body {
 
 .skill-cat {
   font-family: var(--title-font);
-  font-size: 32px;
+  font-size: 2rem;
   text-transform: uppercase;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 
 .skill-chips {
@@ -242,7 +242,7 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 7px;
-  font-size: 16px;
+  font-size: 1rem;
   border: 1px solid #242424;
   padding: 6px 14px;
   background: #111;
@@ -263,14 +263,14 @@ body {
 .folders-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 .folder {
   flex: 1;
   min-width: 250px;
   opacity: 0;
-  transform: translateY(24px);
+  transform: translateY(1.5rem);
   transition: 0.5s;
   cursor: pointer;
 }
@@ -288,9 +288,9 @@ body {
   border: 1px solid #1e1e1e;
   border-bottom: none;
   padding: 8px 18px;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #555;
-  margin-left: 16px;
+  margin-left: 1rem;
   transition: 0.3s;
 }
 
@@ -298,11 +298,11 @@ body {
   background: rgba(13, 13, 13, 0.6);
   backdrop-filter: blur(3px);
   border: 1px solid #1e1e1e;
-  padding: 24px;
-  min-height: 320px;
+  padding: 1.5rem;
+  min-height: 20rem;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 0.75rem;
   position: relative;
   overflow: hidden;
 }
@@ -318,7 +318,7 @@ body {
 
 .folder-name {
   font-family: var(--title-font);
-  font-size: 38px;
+  font-size: 2.375rem;
   text-transform: uppercase;
   line-height: 0.92;
   color: #333;
@@ -339,10 +339,10 @@ body {
 
 .contact-tagline {
   font-family: var(--title-font);
-  font-size: 64px;
+  font-size: 4rem;
   text-transform: uppercase;
   line-height: 1;
-  margin-bottom: 56px;
+  margin-bottom: 3.5rem;
   transition: 0.5s;
 }
 
@@ -361,9 +361,9 @@ body {
 .contact-link-row {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 1rem;
   text-decoration: none;
-  padding: 18px 0;
+  padding: 1.125rem 0;
   border-bottom: 1px solid var(--border-color);
   color: var(--secondary-color);
   transition: 0.3s;
@@ -377,13 +377,13 @@ body {
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: 1.75rem;
 }
 
 .form-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 24px;
+  gap: 1.5rem;
 }
 
 .form-field {
@@ -400,8 +400,8 @@ body {
   border-bottom: 1px solid #2a2a2a;
   color: var(--secondary-color);
   font-family: var(--text-font);
-  font-size: 20px;
-  padding: 12px 0;
+  font-size: 1.25rem;
+  padding: 0.75rem 0;
   outline: none;
 }
 
@@ -425,8 +425,8 @@ body {
   border: 1px solid var(--primary-color);
   color: var(--primary-color);
   font-family: var(--text-font);
-  font-size: 26px;
-  padding: 12px 32px;
+  font-size: 1.625rem;
+  padding: 0.75rem 2rem;
   cursor: pointer;
   transition: 0.5s;
 }
@@ -439,7 +439,7 @@ body {
 .site-footer {
   display: flex;
   justify-content: space-between;
-  padding: 28px 5vw;
+  padding: 1.75rem 5vw;
   border-top: 1px solid var(--border-color);
   color: #333;
 }
@@ -459,7 +459,7 @@ body {
 }
 
 .project-chips .skill-chip {
-  font-size: 14px;
+  font-size: 0.875rem;
   padding: 4px 10px;
   background: rgba(255, 255, 255, 0.05);
 }
@@ -471,7 +471,7 @@ body {
 }
 
 .skill-bg-word {
-  font-size: clamp(60px, 10vw, 120px);
+  font-size: clamp(4rem, 10vw, 7.5rem);
   right: 15px;
   line-height: 1;
   pointer-events: none;
@@ -482,7 +482,7 @@ body {
     flex-direction: column;
     text-align: center;
     gap: 50px;
-    padding: 60px 20px;
+    padding: 3.75rem 1.25rem;
   }
 
   .home-content {
@@ -491,24 +491,24 @@ body {
   }
 
   .home-title a {
-    font-size: clamp(70px, 18vw, 130px);
+    font-size: clamp(4.375rem, 18vw, 8rem);
     line-height: 0.8;
   }
 
   .skills-grid {
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 1.875rem;
     width: 100%;
   }
 
   .skill-card {
-    min-height: 320px;
+    min-height: 20rem;
   }
 
   .folders-row {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.25rem;
   }
 
   .folder {
@@ -529,7 +529,7 @@ body {
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
   }
 
   .section-rule {
@@ -537,7 +537,7 @@ body {
   }
 
   .skill-cat {
-    font-size: 28px;
+    font-size: 1.75rem;
   }
 
   .skill-chips {
@@ -545,12 +545,12 @@ body {
   }
 
   .skill-chip {
-    font-size: 14px;
+    font-size: 0.875rem;
     padding: 5px 10px;
   }
 
   .contact-tagline {
-    font-size: 38px;
+    font-size: 2.375rem;
   }
 
   .form-row {
@@ -564,7 +564,7 @@ body {
   }
 
   .contact-link-value {
-    font-size: 16px;
+    font-size: 1rem;
     word-break: break-all;
   }
 }
